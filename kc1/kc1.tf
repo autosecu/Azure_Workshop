@@ -68,7 +68,7 @@ variable "automation_account_name" {
 
 variable "sql_server_name" {
   type          = string
-  default       = "svrcustomerdb"
+  default       = "svrcustomerdb345"
   description   = "The name of the SQL Server"
 }
 
