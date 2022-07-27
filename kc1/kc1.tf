@@ -6,6 +6,7 @@
 
 variable "domain" {
   type          = string
+  default       = "nullsendcyber.onmicrosoft.com"
   description   = "Domain name (for example: contoso.onmicrosoft.com)"
 }
 
@@ -29,16 +30,19 @@ variable "user_name3" {
 
 variable "user_password1" {
   type          = string
+  default       = "P@$$word1234567"
   description   = "Password"
 }
 
 variable "user_password2" {
   type          = string
+  default       = "P@$$word1234567"
   description   = "Password"
 }
 
 variable "user_password3" {
   type          = string
+  default       = "P@$$word1234567"
   description   = "Password"
 }
 
