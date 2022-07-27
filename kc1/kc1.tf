@@ -108,9 +108,6 @@ provider "azurerm" {
     key_vault {
       purge_soft_delete_on_destroy = true 
     }
-  use_msi = true
-  subscription_id = "data.azurerm_subscription.current.id"
-  tenant_id = "data.azurerm_subscription.current.tenant_id"
   }
 }
 
