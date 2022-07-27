@@ -247,8 +247,8 @@ resource "azurerm_mssql_server" "AzureSQLServer" {
 resource "azurerm_mssql_firewall_rule" "SQLFirewallRule" {
   name                = "AlllowAzureServices"
   server_id           = azurerm_mssql_server.AzureSQLServer.id
-  start_ip_address    = "X.X.X.X"
-  end_ip_address      = "X.X.X.X"
+  start_ip_address    = "99.66.181.141"
+  end_ip_address      = "99.66.181.141"
 }
 
 resource "azurerm_mssql_database" "AzureSQLDB" {
