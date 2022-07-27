@@ -60,7 +60,7 @@ variable "application_name" {
 
 variable "key_vault_name" {
   type          = string
-  default       = "InnovationTeamKeyVaultNSC"
+  default       = "InnovationTeamKeyVaultNS"
   description   = "The name of the Key Vault"
 }
 
