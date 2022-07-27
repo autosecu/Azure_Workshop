@@ -11,13 +11,13 @@ variable "domain" {
 
 variable "user_name1" {
   type          = string
-  default       = "chris.green"
+  default       = "rick.roll"
   description   = "User name"
 }
 
 variable "user_name2" {
   type          = string
-  default       = "peter.williams"
+  default       = "thor.odinson"
   description   = "User name"
 }
 
