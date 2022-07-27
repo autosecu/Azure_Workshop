@@ -14,7 +14,7 @@ Each kill-chain has in its folder the Terraform script (and other pre-reqs files
 ## Deployment
 ```
 az login
-git clone https://github.com/mandiant/Azure_Workshop.git
+git clone https://github.com/autosecu/Azure_Workshop.git
 cd Azure_Workshop
 cd kc1
 
