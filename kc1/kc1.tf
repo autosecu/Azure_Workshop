@@ -12,13 +12,13 @@ variable "domain" {
 
 variable "user_name1" {
   type          = string
-  default       = "rick.roll"
+  default       = "chris.green"
   description   = "User name"
 }
 
 variable "user_name2" {
   type          = string
-  default       = "thor.odinson"
+  default       = "peter.williams"
   description   = "User name"
 }
 
@@ -30,19 +30,19 @@ variable "user_name3" {
 
 variable "user_password1" {
   type          = string
-  default       = "P@$$word1234567"
+  default       = "user1password"
   description   = "Password"
 }
 
 variable "user_password2" {
   type          = string
-  default       = "P@$$word1234567"
+  default       = "user2password"
   description   = "Password"
 }
 
 variable "user_password3" {
   type          = string
-  default       = "P@$$word1234567"
+  default       = "dbadminpassword"
   description   = "Password"
 }
 
