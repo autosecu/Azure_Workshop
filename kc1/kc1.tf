@@ -30,19 +30,19 @@ variable "user_name3" {
 
 variable "user_password1" {
   type          = string
-  default       = "user1password"
+  default       = "user1P@$$word1234567"
   description   = "Password"
 }
 
 variable "user_password2" {
   type          = string
-  default       = "user2password"
+  default       = "user2P@$$word1234567"
   description   = "Password"
 }
 
 variable "user_password3" {
   type          = string
-  default       = "dbadminpassword"
+  default       = "dbadminP@$$word1234567"
   description   = "Password"
 }
 
