@@ -77,7 +77,7 @@ variable "automation_account_name" {
 variable "sql_server_name" {
   type          = string
    # Can't be duplicate of any other deployed
-  default       = "datsvr4AADTElab010"
+  default       = "datsvr4aadtelab010"
   description   = "The name of the SQL Server"
 }
 
