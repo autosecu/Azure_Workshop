@@ -1,4 +1,6 @@
 # Author: Roxana Kovaci
+# edited to accomodate skills initiative
+# make edits at Lines: 12, 67, 80 259, 260 - Jeff Daniels
 
 #############################################################################
 # VARIABLES
@@ -6,6 +8,7 @@
 
 variable "domain" {
   type          = string
+  # Change domain
   default       = "nullsendcyber.onmicrosoft.com"
   description   = "Domain name (for example: contoso.onmicrosoft.com)"
 }
@@ -60,6 +63,7 @@ variable "application_name" {
 
 variable "key_vault_name" {
   type          = string
+  # Can't be duplicate of any other deployed
   default       = "InnovationTeamKeyVaultNS"
   description   = "The name of the Key Vault"
 }
@@ -72,7 +76,8 @@ variable "automation_account_name" {
 
 variable "sql_server_name" {
   type          = string
-  default       = "svrcustomerdb345"
+   # Can't be duplicate of any other deployed
+  default       = "dataserver001"
   description   = "The name of the SQL Server"
 }
 
@@ -251,8 +256,9 @@ resource "azurerm_mssql_server" "AzureSQLServer" {
 resource "azurerm_mssql_firewall_rule" "SQLFirewallRule" {
   name                = "AlllowAzureServices"
   server_id           = azurerm_mssql_server.AzureSQLServer.id
-  start_ip_address    = "99.66.181.141"
-  end_ip_address      = "99.66.181.141"
+  # Change to your machines Public IP
+  start_ip_address    = "20.64.112.148"
+  end_ip_address      = "20.64.112.148"
 }
 
 resource "azurerm_mssql_database" "AzureSQLDB" {
