@@ -1,4 +1,6 @@
 # Author: Roxana Kovaci
+# edited to accomodate skills initiative
+# make edits at Lines: 12, 73,  - Jeff Daniels
 
 #############################################################################
 # VARIABLES
@@ -6,6 +8,7 @@
 
 variable "domain" {
   type          = string
+    # Change domain
   default       = "nullsendcyber.onmicrosoft.com"
   description   = "Domain name (for example: contoso.onmicrosoft.com)"
 }
@@ -18,7 +21,7 @@ variable "user_name1" {
 
 variable "user_password1" {
   type          = string
-  default       = "P@$$word1234567"
+  default       = "user1P@$$word1234567"
   description   = "Password"
 }
 
@@ -60,13 +63,14 @@ variable "windowsvm_user" {
 
 variable "windowsvm_password" {
   type          = string
-  default       = "P@$$word1234567"
+  default       = "winvmP@$$word1234567"
   description   = "The password of the local admin on the Windows VM"
 }
 
 variable "storage_account_name" {
   type          = string
-  default       = "dataminingops01"
+   # Can't be duplicate of any other deployed
+  default       = "dataminingops001"
   description   = "The name of the Storage Account"
 }
 
